@@ -70,7 +70,7 @@ except:
 # --- HEADER AVEC LOGO ET TITRE ---
 col_l, col_r = st.columns([1, 4])
 with col_l:
-    st.image("sgci.webp", width=120)
+    st.image("logo.png", width=120)
 with col_r:
     st.markdown("<h1 style='color: #E2001A; margin-bottom: 0;'>SGCI - Risk Intelligence Suite</h1>", unsafe_allow_html=True)
     st.markdown("<p style='color: gray; font-size: 18px;'>Outil Décisionnel Crédit pour Particuliers & PME</p>", unsafe_allow_html=True)
