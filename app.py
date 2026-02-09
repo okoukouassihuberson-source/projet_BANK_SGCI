@@ -12,23 +12,25 @@ st.markdown("""
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
     html, body, [class*="css"] { font-family: 'Roboto', sans-serif; }
 
-    /* Couleurs SGCI */
+    /* Couleurs SGCI Dark Mode */
     :root {
         --sg-red: #E2001A;
-        --sg-black: #000000;
-        --sg-gray: #F4F4F4;
+        --sg-black: #FFFFFF; /* Texte blanc sur fond sombre */
+        --sg-gray: #0E1117; /* Fond principal sombre */
+        --card-bg: #262730; /* Fond des cartes sombre */
     }
 
     .main { background-color: var(--sg-gray); }
     
     /* Style des cartes type Bootstrap */
     .st-card {
-        background-color: white;
+        background-color: var(--card-bg);
         padding: 25px;
         border-radius: 8px;
         border-left: 5px solid var(--sg-red);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3); /* Ombre plus visible */
         margin-bottom: 20px;
+        color: var(--sg-black);
     }
     
     .footer {
@@ -36,12 +38,13 @@ st.markdown("""
         left: 0;
         bottom: 0;
         width: 100%;
-        background-color: var(--sg-black);
+        background-color: #000000; /* Reste noir pour le contraste */
         color: white;
         text-align: center;
         padding: 10px;
         font-size: 14px;
         z-index: 100;
+        border-top: 1px solid #333;
     }
     
     /* Custom Headers */
